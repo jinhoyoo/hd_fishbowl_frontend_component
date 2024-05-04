@@ -1,72 +1,124 @@
-# Getting Started
+# 시작하기
 
-Hyper-React was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[리액트 앱 만들기](https://github.com/facebook/create-react-app)로 작성된 Hyper-React 테마가 적용된 건민네 화면 작성용 프로젝트 
 
-## Available Scripts
+## 사용가능한 스크립트
 
-In the project directory, you can run:
+프로젝트 디렉토리에서 아래처럼 yarn 패키지 메니저를 실행합니다: 
 ### `yarn`
+```bash
+[ user@machine MINGW64 /c/projects/hd_fishbowl_frontend_component ]
+$ yarn
+yarn install v1.22.21
+warning ..\package.json: No license field
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.39s.
+```
 
-and then
+그리고, 아래 yarn 명령어로 개발모드의 앱을 실행합니다..
 ### `yarn start`
+```bash
+[ user@machine MINGW64 /c/projects/hd_fishbowl_frontend_component ]
+$ yarn start
+yarn run v1.22.21
+warning ..\package.json: No license field
+$ react-scripts start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+...
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Starting the development server...
+```
+브라우저에서 [http://localhost:3000](http://localhost:3000) 주소를 열어 화면을 확인합니다.
+
+
+코드를 수정하면, 페이지는 자동으로 갱신됩니다. \
+또한, 콘솔에서 lint 에러들을 볼 수 있습니다.
 
 ### `yarn test`
+```bash
+[ user@machine MINGW64 /c/projects/hd_fishbowl_frontend_component ]
+$ yarn test
+No tests found related to files changed since last commit.
+Press `a` to run all tests, or run Jest with `--watchAll`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Watch Usage
+ › Press a to run all tests.
+ › Press f to run only failed tests.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+
+```
+인터렉티브 감시 모드에서 테스트 러너를 실행합니다. \
+더 많은 정보를 위해서는 [테스트 실행](https://facebook.github.io/create-react-app/docs/running-tests) 섹션을 확인하세요. \
 
 ### `yarn build`
+```bash
+[ user@machine MINGW64 /c/projects/hd_fishbowl_frontend_component ]
+$ yarn build
+yarn run v1.22.21
+warning ..\package.json: No license field
+$ react-scripts build
+Creating an optimized production build...
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+build 폴더로, 프로덕션을 위한 앱을 빌드합니다. \
+이 명령은 React 프로덕션 모드의 번들로 패키징하고, 좋은 성능을 위한 최적화를 수행 합니다.
+
+빌드는 해시(hash)들을 포함해 파일이름들과 내용을 최소화 합니다. \
+빌드가 끝나면, 앱의 배치 준비가 되었습니다.
+
+더 많은 정보를 위해서 [배치](https://facebook.github.io/create-react-app/docs/deployment)를 확인하세요.
 
 ### `yarn eject`
+```bash
+[ user@machine MINGW64 /c/projects/hd_fishbowl_frontend_component ]
+$ yarn eject
+yarn run v1.22.21
+warning ..\package.json: No license field
+$ react-scripts eject
+NOTE: Create React App 2+ supports TypeScript, Sass, CSS Modules and more without ejecting: https://reactjs.org/blog/2018/10/01/create-react-app-v2.html
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+? Are you sure you want to eject? This action is permanent. » (y/N)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+**Note: 이 동작은 단방향입니다. 한번 `eject`를 수행하면 되돌릴 수 없습니다.**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+빌드 툴과 설정의 선택들을 만족스럽지 못한 경우, 언제든지 `eject` 명령을 수행하여 프로젝트로부터 빌드 의존성을 제거합니다.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+대신에, 모든 설정 파일들과 타동적인(transitive) 의존성들(webpack, Babel, ESLint, etc)들을 프로젝트에 복사하여, 사용자가 직접 제어하게 합니다. 명령을 수행한 이후에 `eject`를 제외한 모든 명령어는 여전히 동작하게 되며, 복사된 스크립트들을 참조하도록 지정되어 사용자가 변경하도록 합니다. 
 
-## Learn More
+`eject`명령어는 전혀 사용하지 않아도 됩니다. 전문적으로 설정되는 특성 세트는 중소규모 배치에 적합하도록 되어있어, 이 특성들을 조정해야하는 의무를 가지지 않아도 됩니다.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 더 배워보기
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[React App 생성 하기](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Code Splitting
+### 코드 분할
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### 번들 크기 분석
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### 진보적인 Web App 만들기
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### 고급 설정
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### 배치
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+### `yarn build`의 최소화 실패
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
